@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Search Engine using Python</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+  <!--<script src="../static/js/bootstrap.min.js"></script>-->
+
+
+</head>
+
+<body>
+
+
+
+        <div class="header d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+            <h5 class="my-0 mr-md-auto font-weight-normal brand"><a href="/"> Search Engine</a></h5>
+
+        </div>
+        <div class="p-3 p-md-5 text-white bg-dark content_block">
+
+            <div class="simFormContainer itemsbased">
+                <form name="search" id="myForm" class="form-inline">
+                    <input class="inputbox" id="keyword" name="q" placeholder="Enter Your Search Tarm">
+                    <input type="button" class="btn btn-primary" onclick="myFunction()" value="Search">
+                </form>
+            </div>
+       <div id="searchResult"></div>
+
+        </div>
+
+
+        <footer class="blog-footer  bg-white align-items-center">
+            <p>&copy; Search Engine by Bishwajit And Chris</p>
+        </footer>
+        <script>
+function myFunction() {
+
+    const app = document.getElementById('searchResult');
+    app.innerHTML = '';
+const container = document.createElement('table');
+container.setAttribute('class', 'table table-bordered table-striped');
+
+const tableHead = document.createElement('thead');
+const trHead = document.createElement('tr');
+trHead.setAttribute('class', 'bg-info');
+const thHead1 = document.createElement('th');
+const thHead2 = document.createElement('th');
+thHead1.textContent = 'score';
+thHead2.textContent = 'Link';
+
+app.appendChild(container);
+container.appendChild(tableHead);
+tableHead.appendChild(trHead)
+trHead.appendChild(thHead1);
+trHead.appendChild(thHead2);
+
+    const request = new XMLHttpRequest();
+    var term = document.getElementById("keyword").value;
+    this.term = term;
+    url = 'http://127.0.0.1:5000/search/'.concat(this.term);
+    request.open("GET", url, true);
+    
+    request.onload = function () {
+  // Begin accessing JSON data here
+    var data = JSON.parse(this.response);
+    
+
+  if (request.status >= 200 && request.status < 400) {
+    data.results.forEach(result => {
+         const tr = document.createElement('tr');
+      const td1 = document.createElement('td');
+      newlink = document.createElement('a');
+      newlink.textContent = result.url;
+      newlink.setAttribute('class', 'link');
+      newlink.setAttribute('href', 'http://wikipedia.com'+result.url);
+      newlink.setAttribute('target', '_blank');
+      
+
+      const td2 = document.createElement('td');
+      td2.textContent = result.score;
+
+      container.appendChild(tr);
+      tr.appendChild(td2);
+      tr.appendChild(td1);
+      td1.appendChild(newlink);
+      
+    });
+  } else {
+    const errorMessage = document.createElement('marquee');
+    errorMessage.textContent = `Gah, it's not working!`;
+    app.appendChild(errorMessage);
+  }
+}
+request.send();
+
+}
+</script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../static/js/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
