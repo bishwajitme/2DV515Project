@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e931117-0476-431b-aa93-7c6c7fd9381b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Score.py" beforeDir="false" afterPath="$PROJECT_DIR$/Score.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Avant-garde" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Avant-garde" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Bird_vocalization" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Bird_vocalization" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Child_prodigy" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Child_prodigy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Hard_rock" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Hard_rock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/JOOX" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/JOOX" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Music" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Music" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Music_of_Eswatini" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Music_of_Eswatini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Music_of_Papua_New_Guinea" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Music_of_Papua_New_Guinea" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Music_of_Switzerland" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Music_of_Switzerland" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Music_of_West_Africa" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Music_of_West_Africa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Niche_market" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Niche_market" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Simfy" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Simfy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Links/Zune_software" beforeDir="false" afterPath="$PROJECT_DIR$/data/Links/Zune_software" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Words/JOOX" beforeDir="false" afterPath="$PROJECT_DIR$/data/Words/JOOX" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Words/Music" beforeDir="false" afterPath="$PROJECT_DIR$/data/Words/Music" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Words/Music_of_Switzerland" beforeDir="false" afterPath="$PROJECT_DIR$/data/Words/Music_of_Switzerland" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readfiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/readfiles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrape.py" afterDir="false" />
-    </list>
+    <list default="true" id="3e931117-0476-431b-aa93-7c6c7fd9381b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +16,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrape.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            <state relative-caret-position="315">
+              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+              <folding>
+                <element signature="e#46#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,12 +171,12 @@
       <updated>1546252696709</updated>
       <workItem from="1546252698187" duration="18753000" />
       <workItem from="1547570372532" duration="1610000" />
-      <workItem from="1547643064188" duration="988000" />
+      <workItem from="1547643064188" duration="1575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21351000" />
+    <option name="totallyTimeSpent" value="21938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
@@ -374,8 +352,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scrape.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="e#46#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
