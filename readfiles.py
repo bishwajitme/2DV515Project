@@ -122,7 +122,7 @@ class documentLists():
     # Run the PageRank algorithm for 20 iterations
     # then pass the values to search
     def pageRank(self):
-        MAX_ITERATIONS = 5
+        MAX_ITERATIONS = 20
         for i in range(0, MAX_ITERATIONS):
             print i
             for page in self.pages:
