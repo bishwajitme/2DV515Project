@@ -12,6 +12,7 @@ class wikipediaPage:
     group = 1
     text = []
 
+# collecting 220 nodes
 data = {}
 data['nodes'] = []
 data['links'] = []
@@ -60,11 +61,12 @@ def addThread(urlToScrape):
         termine = True
 
 
-
+# get the wiki links
 def getLink(a):
     if a.get("href") != None and a.get("href").startswith("/wiki/") and not a.get("href").endswith(".jpg" or ".JPG" or ".svg" or ".jpeg" or ".JPEG" or ".ogg"):
         return str(a.get("href"))
 
+# remove unnecessary text
 def remove_tags(text):
     return re.sub(r'[^\w]','', text)
 
@@ -93,12 +95,14 @@ def pureText(cell):
     puretext = ''.join(no_footnotes)
     return puretext.split(" ")
 
+# write Links in the file
 def writeLinks(links, filename):
     f = open('data/Links/' + filename, "w+")
     for x in links:
         f.write(x + "\r\n")
     f.close()
 
+# write text in the file
 def writeTexts(newwords, filename):
     wf = open('data/Words/' + filename, "w+")
     for sword in newwords:
