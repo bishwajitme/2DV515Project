@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 import re
 import threading
 import requests
@@ -76,7 +74,7 @@ def pureText(cell):
         for ref in references:
             ref.extract()
 
-    # Strip main ref from the cell
+    # Strip main references from the cell
     references = cell.findAll("ol", {"class": "references"})
     if references:
         for ref in references:
