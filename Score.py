@@ -1,3 +1,6 @@
+# Score initialization for every metric
+# In our case frequency of words (content of the page),
+# document location, pageRank algorithm (inbound links)
 class Score:
     def __init__(self):
         self.content = []

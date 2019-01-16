@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import json
-import threading
-import time
-from bs4 import BeautifulSoup
-from urllib import urlopen
-import requests
-import lxml
-import schedule
 import re
+import threading
+import requests
+import schedule
+from bs4 import BeautifulSoup
+
 
 class wikipediaPage:
     name = ''

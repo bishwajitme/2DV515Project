@@ -1,4 +1,5 @@
-from flask import Flask, request, render_template, jsonify
+from flask import Flask
+# request, render_template, jsonify
 from flask_restful import Resource, Api
 from Search import Search
 
