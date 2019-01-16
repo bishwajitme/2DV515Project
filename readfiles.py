@@ -4,7 +4,6 @@ import csv
 from Page import Page
 import os
 import nltk
-
 nltk.download('stopwords')
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -15,7 +14,7 @@ class documentLists():
         self.wordToId = {}
         self.pages = []
 
-    # this  function will read all the files in the folder and sub-folder
+    # this  function will read all the files in the folder and sub-folders
     def all_documents_name(self, folderName):
         documents_name = []
         fileindex = 0
@@ -27,6 +26,7 @@ class documentLists():
         del documents_name[0]
         return documents_name
 
+    # iterate through all docs to find and append all words and links exists in the document.
     def iterateOverAllDocs(self):
         print "started"
         docsnameslist = self.all_documents_name("data/Words")

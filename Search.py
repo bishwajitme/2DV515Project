@@ -1,8 +1,6 @@
-from flask import Flask
-from flask_restful import Resource, Api
-from random import randint
-from Score import Score
 import urllib
+from flask_restful import Resource
+from Score import Score
 from readfiles import documentLists
 
 documentlist = documentLists()
