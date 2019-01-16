@@ -1,4 +1,4 @@
-# Score initialization for every metric
+# Score initialization for every metric used
 # In our case frequency of words (content of the page),
 # document location, pageRank algorithm (inbound links)
 class Score:
@@ -19,7 +19,6 @@ class Score:
             for score in scores:
                 scores[i] = vmin / max(scores[i], 0.00001)
                 i += 1
-
         else:
             vmax = max(scores)
             i = 0

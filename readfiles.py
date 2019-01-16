@@ -34,6 +34,7 @@ class documentLists():
         nos_of_documents = len(docsnameslist)
         #print nos_of_documents
 
+        # Check all the documents
         for i in range(nos_of_documents - 1):
             page = Page()
             filename = docsnameslist[i].split('/')[2]
@@ -41,8 +42,11 @@ class documentLists():
             page.url = "/wiki/" + filename
             stop_words = set(stopwords.words('english'))
 
+            # Then opens the docsnameslist and read it as file
             with open(docsnameslist[i], "r") as f:
-                reader = csv.reader(f, delimiter=" ")
+                # We use delimiter a one-character string used to separate fields
+                # in our case is white space
+                reader = csv.reader(f, delimiter=" ", quoting=csv.QUOTE_NONE)
                 for row in reader:
                     for word in row:
                        if word not in stop_words:
@@ -56,9 +60,8 @@ class documentLists():
 
                            page.words.append(word_id)
 
-
             with open(linksList[i], "r") as f:
-                reader = csv.reader(f, delimiter="\n")
+                reader = csv.reader(f, delimiter="\n", quoting=csv.QUOTE_NONE)
                 for row in reader:
                     for link in row:
                         page.links.append(link)
