@@ -110,9 +110,9 @@ class documentLists():
 
     # We get the documents ids that we previously indexed
     # that include the word id we ask for in the search
-    def getDocuments(self, word_ids):
+    def getDocuments(self, words):
         pages = []
-        for word_id in word_ids:
+        for word_id in words:
             for page in self.pages:
                 if word_id in page.words:
                     if page not in pages:
@@ -131,12 +131,12 @@ class documentLists():
                 # self
         return None
 
-    def pageRankPage(self, pr_page):
+    def pageRankPage(self, pagerank):
         pr = 0
         for page in self.pages:
-            if page.url != pr_page.url:
+            if page.url != pagerank.url:
                 for link in page.links:
-                    if link == pr_page.url:
+                    if link == pagerank.url:
                         # (PR1/links1 + PR2/links2 + ... + PRn/linksn)
                         pr += (page.pageRank / len(page.links))
 
