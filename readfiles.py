@@ -81,6 +81,8 @@ class documentLists():
         return str1
 
     # this function returns a list of tokenized and stemmed words of any text
+    # Stemming is the process of reducing inflected (or sometimes derived) words to their stem,
+    # base or root form — generally a written word form.
     def getTokenizedAndNormalizedList(self, doc_text):
         tokens = nltk.word_tokenize(doc_text)
 
