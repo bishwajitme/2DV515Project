@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from nltk.corpus import stopwords
 import sys
 import csv
@@ -82,7 +84,7 @@ class documentLists():
 
     # this function returns a list of tokenized and stemmed words of any text
     # Stemming is the process of reducing inflected (or sometimes derived) words to their stem,
-    # base or root form — generally a written word form.
+    # base or root form generally a written word form.
     def getTokenizedAndNormalizedList(self, doc_text):
         tokens = nltk.word_tokenize(doc_text)
 

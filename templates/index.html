@@ -17,7 +17,7 @@
 
 
         <div class="header d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-            <h5 class="my-0 mr-md-auto font-weight-normal brand"><a href="/"> Search Engine</a></h5>
+            <h5 class="my-0 mr-md-auto font-weight-normal brand"><a href="/">Search Engine</a></h5>
 
         </div>
         <div class="p-3 p-md-5 text-white bg-dark content_block">
@@ -54,19 +54,19 @@ thHead2.textContent = 'Link';
 
 app.appendChild(container);
 container.appendChild(tableHead);
-tableHead.appendChild(trHead)
+tableHead.appendChild(trHead);
 trHead.appendChild(thHead1);
 trHead.appendChild(thHead2);
 
     const request = new XMLHttpRequest();
-    var term = document.getElementById("keyword").value;
+    let term = document.getElementById("keyword").value;
     this.term = term;
     url = 'http://127.0.0.1:5000/search/'.concat(this.term);
     request.open("GET", url, true);
     
     request.onload = function () {
   // Begin accessing JSON data here
-    var data = JSON.parse(this.response);
+    let data = JSON.parse(this.response);
     
 
   if (request.status >= 200 && request.status < 400) {
@@ -91,10 +91,10 @@ trHead.appendChild(thHead2);
     });
   } else {
     const errorMessage = document.createElement('marquee');
-    errorMessage.textContent = `Gah, it's not working!`;
+    errorMessage.textContent = `Sorry, it's not working!`;
     app.appendChild(errorMessage);
   }
-}
+};
 request.send();
 
 }

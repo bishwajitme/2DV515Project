@@ -5,10 +5,23 @@ footer p {
     padding: 10px;
 }
 .header {
-    background: rgba(58,118,143,.9) !important;
+    background: #3a768f !important;
     margin-bottom: 0 !important;
     color: #fff;
 }
+.inputbox{
+    height: 40px;
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+
+    margin-right: 20px;
+}
+
+
 .content_block{
     min-height: 500px;
     text-align: center;
@@ -35,11 +48,6 @@ table{
 .simFormContainer{
     text-align: center;
     width: 300px;
-    margin: 20px auto 30px;
-}
-.findRecommendedMovieContainer{
-    text-align: center;
-    width: 500px;
     margin: 20px auto 30px;
 }
 .simFormContainer.itemsbased{

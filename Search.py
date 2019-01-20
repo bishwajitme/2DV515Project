@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import urllib
 from flask_restful import Resource
 from Score import Score
@@ -12,6 +14,7 @@ class Search(Resource):
     def __init__(self):
         self.documentlist = documentlist
 
+    # decode the search term and and according to the term bring back the 5 results
     def get(self, search_term):
             print(search_term)
             decoded = urllib.unquote(search_term).split()

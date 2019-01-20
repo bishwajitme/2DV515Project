@@ -1,5 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from flask import Flask
-# request, render_template, jsonify
 from flask_restful import Resource, Api
 from Search import Search
 
@@ -11,7 +12,6 @@ api = Api(app)
 class Index(Resource):
     def get(self):
         return {"data": "hello world"}, 200, {'Access-Control-Allow-Origin': '*'}
-
 
 
 api.add_resource(Index, '/')
