@@ -69,7 +69,7 @@ class documentLists():
                         page.links.append(link)
 
             self.pages.append(page)
-            print "indexed" + str(i)
+            print "file index: " + str(i)
         return None
 
     # We read the words from every document in wikipedia/words
